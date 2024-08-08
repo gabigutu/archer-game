@@ -1,0 +1,3 @@
+<main id="game">
+    <app-cell *ngFor="let tile of tiles" [square]="tile" (clickedCellEmitter)="clickedSomeCell()"></app-cell>
+</main>

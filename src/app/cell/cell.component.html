@@ -1,0 +1,14 @@
+<ng-container *ngIf="square && !square.blocked">
+    <!-- if visible -->
+    <button *ngIf="this.square && square.visible">
+        {{square.value}}
+    </button>
+    <!-- else -->
+    <button *ngIf="this.square && !square.visible" (click)="clickedCell()" ngClass="hidden">X</button>
+</ng-container>
+
+<ng-container *ngIf="square && square.blocked">
+    <button disabled="true">
+        {{square.value}}
+    </button>
+</ng-container>
