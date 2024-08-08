@@ -1,0 +1,9 @@
+<ng-container *ngIf="enemy.type == 0">
+    <div class="swordsman swordsman{{enemy.walkSprite}}" [style]="{ 'left': enemy.posOx + 'px' }"
+        [ngClass]="enemy.looksRight ? 'characterToRight' : 'characterToLeft'"></div>
+</ng-container>
+
+<ng-container *ngIf="enemy.type == 1">
+    <div class="wizard wizard{{enemy.walkSprite}}" [style]="{ 'left': enemy.posOx + 'px' }"
+        [ngClass]="enemy.looksRight ? 'characterToRight' : 'characterToLeft'"></div>
+</ng-container>
