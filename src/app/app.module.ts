@@ -4,12 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ScreenComponent } from './screen/screen.component';
 import { EnemyComponent } from './enemy/enemy.component';
+import { HudComponent } from './hud/hud.component';
+import { CoinElementComponent } from './coin-element/coin-element.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ScreenComponent,
-    EnemyComponent
+    EnemyComponent,
+    HudComponent,
+    CoinElementComponent
   ],
   imports: [
     BrowserModule

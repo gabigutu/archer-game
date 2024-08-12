@@ -1,0 +1,11 @@
+.hud {
+  display: flex;
+  background-color: rgba(230, 230, 230, 0.9);
+  height: 50px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.hud > div {
+  flex: 1;
+  text-align: center;
+}

@@ -6,6 +6,7 @@
   left: 0;
   background-image: url("/assets/images/sprites/swordsman/walk.png");
   background-repeat: no-repeat;
+  background-color: rgba(90, 90, 90, 0.3);
 }
 .swordsman1 {
   background-position: 0 0;
@@ -40,6 +41,7 @@
   left: 0;
   background-image: url("/assets/images/sprites/wizard/walk.png");
   background-repeat: no-repeat;
+  background-color: rgba(90, 90, 90, 0.3);
 }
 .wizard1 {
   background-position: 0 0;

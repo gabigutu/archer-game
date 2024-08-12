@@ -1,10 +1,14 @@
 <main id="game">
 
+    <app-hud [lives]="player.noLives" [score]="player.score"></app-hud>
+
     <div class="player player{{player.walkSprite}}"
         [ngClass]="player.looksRight ? 'characterToRight' : 'characterToLeft'"
         [ngStyle]="{ 'left': player.posOx + 'px' }">
     </div>
 
     <app-enemy *ngFor="let enemy of enemies" [enemy]="enemy"></app-enemy>
+
+    <app-coin-element *ngFor="let coin of coins" [coin]="coin"></app-coin-element>
 
 </main>
